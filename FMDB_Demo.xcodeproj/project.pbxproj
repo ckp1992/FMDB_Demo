@@ -13,6 +13,13 @@
 		7F37D12D1AE5F41800357185 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F37D12C1AE5F41800357185 /* Images.xcassets */; };
 		7F37D1301AE5F41800357185 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F37D12E1AE5F41800357185 /* LaunchScreen.xib */; };
 		7F37D13C1AE5F41800357185 /* FMDB_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F37D13B1AE5F41800357185 /* FMDB_DemoTests.swift */; };
+		7F37D1671AE6343500357185 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37D15D1AE6343500357185 /* FMDatabase.m */; };
+		7F37D1681AE6343500357185 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37D15F1AE6343500357185 /* FMDatabaseAdditions.m */; };
+		7F37D1691AE6343500357185 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37D1611AE6343500357185 /* FMDatabasePool.m */; };
+		7F37D16A1AE6343500357185 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37D1631AE6343500357185 /* FMDatabaseQueue.m */; };
+		7F37D16B1AE6343500357185 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37D1661AE6343500357185 /* FMResultSet.m */; };
+		7F37D16D1AE6358900357185 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F37D16C1AE6358900357185 /* libsqlite3.0.dylib */; };
+		7F37D16F1AE635B100357185 /* PersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F37D16E1AE635B100357185 /* PersistentManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,20 @@
 		7F37D1351AE5F41800357185 /* FMDB_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMDB_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F37D13A1AE5F41800357185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F37D13B1AE5F41800357185 /* FMDB_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDB_DemoTests.swift; sourceTree = "<group>"; };
+		7F37D1451AE5F5CF00357185 /* FMDB_Demo-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FMDB_Demo-Bridge-Header.h"; sourceTree = "<group>"; };
+		7F37D15C1AE6343500357185 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		7F37D15D1AE6343500357185 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		7F37D15E1AE6343500357185 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		7F37D15F1AE6343500357185 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		7F37D1601AE6343500357185 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		7F37D1611AE6343500357185 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		7F37D1621AE6343500357185 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		7F37D1631AE6343500357185 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		7F37D1641AE6343500357185 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		7F37D1651AE6343500357185 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		7F37D1661AE6343500357185 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		7F37D16C1AE6358900357185 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		7F37D16E1AE635B100357185 /* PersistentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F37D16D1AE6358900357185 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,9 +99,11 @@
 		7F37D1221AE5F41800357185 /* FMDB_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				7F37D15B1AE6343500357185 /* fmdb */,
 				7F37D1251AE5F41800357185 /* AppDelegate.swift */,
 				7F37D1271AE5F41800357185 /* ViewController.swift */,
 				7F37D1291AE5F41800357185 /* Main.storyboard */,
+				7F37D1451AE5F5CF00357185 /* FMDB_Demo-Bridge-Header.h */,
 				7F37D12C1AE5F41800357185 /* Images.xcassets */,
 				7F37D12E1AE5F41800357185 /* LaunchScreen.xib */,
 				7F37D1231AE5F41800357185 /* Supporting Files */,
@@ -110,6 +134,26 @@
 				7F37D13A1AE5F41800357185 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F37D15B1AE6343500357185 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				7F37D16C1AE6358900357185 /* libsqlite3.0.dylib */,
+				7F37D15C1AE6343500357185 /* FMDatabase.h */,
+				7F37D15D1AE6343500357185 /* FMDatabase.m */,
+				7F37D15E1AE6343500357185 /* FMDatabaseAdditions.h */,
+				7F37D15F1AE6343500357185 /* FMDatabaseAdditions.m */,
+				7F37D1601AE6343500357185 /* FMDatabasePool.h */,
+				7F37D1611AE6343500357185 /* FMDatabasePool.m */,
+				7F37D1621AE6343500357185 /* FMDatabaseQueue.h */,
+				7F37D1631AE6343500357185 /* FMDatabaseQueue.m */,
+				7F37D1641AE6343500357185 /* FMDB.h */,
+				7F37D1651AE6343500357185 /* FMResultSet.h */,
+				7F37D1661AE6343500357185 /* FMResultSet.m */,
+				7F37D16E1AE635B100357185 /* PersistentManager.swift */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +256,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F37D1671AE6343500357185 /* FMDatabase.m in Sources */,
 				7F37D1281AE5F41800357185 /* ViewController.swift in Sources */,
+				7F37D16B1AE6343500357185 /* FMResultSet.m in Sources */,
+				7F37D1691AE6343500357185 /* FMDatabasePool.m in Sources */,
 				7F37D1261AE5F41800357185 /* AppDelegate.swift in Sources */,
+				7F37D1681AE6343500357185 /* FMDatabaseAdditions.m in Sources */,
+				7F37D16F1AE635B100357185 /* PersistentManager.swift in Sources */,
+				7F37D16A1AE6343500357185 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +345,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FMDB_Demo/FMDB_Demo-Bridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -332,6 +383,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FMDB_Demo/FMDB_Demo-Bridge-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -341,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FMDB_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FMDB_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

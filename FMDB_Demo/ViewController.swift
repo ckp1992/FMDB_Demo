@@ -13,6 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+//        PersistentManager.setValueById("1", describe: "1", title: "1")
+//        PersistentManager.setValueById("1", describe: "2", title: "2")
+//        PersistentManager.deleteById("r")
+//        PersistentManager.cleanAll()
+//        PersistentManager.showAll()
+//        println(PersistentManager.getValueById("1"))
+        
     }
 
     override func didReceiveMemoryWarning() {
